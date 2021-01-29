@@ -1,5 +1,5 @@
 {
-   "name": "fastify-nodejs-application",
+   "name": "@hexlet/code",
    "version": "0.1.0",
    "description": "fastify-nodejs-application",
    "main": "server/index.js",
@@ -21,7 +21,7 @@
          "<rootDir>/__tests__/helpers/"
       ]
    },
-   "author": "Stanislav Dzisiak",
+   "author": "Vera Nikitinskaya",
    "license": "ISC",
    "repository": {
       "type": "git",

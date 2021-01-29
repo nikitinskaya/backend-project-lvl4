@@ -2,8 +2,11 @@ extends ../layouts/application.pug
 
 block content
   .card
-    .card-body.p-5.bg-light
+    .card-body.p-5.bg-light.text-center
       .display-4= t('views.welcome.index.hello')
       p.lead= t('views.welcome.index.description')
-      hr
-      a.btn.btn-primary.btn-lg(href="https://hexlet.io")= t('views.welcome.index.more')
+      if isAuthenticated()
+        a.btn.btn-success.btn-lg.mt-4(href="https://hexlet.io")= t('views.welcome.index.toTasks')
+      else
+        a.btn.btn-success.btn-lg.mt-4(href=route('newSession'))= t('views.welcome.index.try')
+      
